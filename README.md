@@ -1,5 +1,5 @@
 # Accident Heatmap - Smart City Safety Visualization
-This projuect is web-based platform that maps accident-proneareas in cities like Indore, using real-time reports and historical data. The interactive heatmap highlights high-risk zones, allowing citizens to make safer travel choices and providing authorities with actionable insights for traffic management and urban planning.
+This project is web-based platform that maps accident-proneareas in cities like Indore, using real-time reports and historical data. The interactive heatmap highlights high-risk zones, allowing citizens to make safer travel choices and providing authorities with actionable insights for traffic management and urban planning.
 # Key Features Section
 ## 🗺️Interactive Google Map
 ## 🔴Heatmap Layer
