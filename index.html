@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accident-Prone Zone Heatmap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 style="font-size: 45px; font-weight: 1000; color: rgb(4, 4, 57); background-color: rgb(73, 156, 228);">🚦Accident-Prone Zone Heatmap</h1>
+            <p>Visualizing dangerous roads to prevent accidents before they happen</p>
+        </nav>
+        <div class="btn-container">
+        <div class="map-btn">
+            <a href="map.html">View Risk Map</a>
+        </div>
+        <div class="report-btn">
+            <a href="report.html">Report an Accident</a>
+        </div>
+        </div>
+    </header>
+    <main style="margin-top: 0;">
+        <section class="overview">
+        <h1 style="text-align: center; color: rgb(22, 5, 92); font-size: 45px;">🚦Accident-Prone Zones - Smart City Safety Map </h1>
+        <p style="justify-content: center;">Visualising High-risk road areas using real-time reports</p>
+        <div class="why">
+            <h3>WHY THIS MATTERS?</h3>
+            <ul>
+                <li>Helps citizens avoid danger & authorities plan safer roads.</li>
+                <li>Actions can taken effectively on Accident-prone areas by improving traffic management.</li>
+                <li>Citizens' Involvement in better traffic management and decreased accident cases.</li>
+            </ul>
+        </div>
+        </section>
+        <section class="facts-section" style="margin: 30px 35px;">
+            <div class="facts-wrapper" id="factsWrapper">
+                <div class="fact">🚨 India reports over 4.5 Lakh road accidents every year.</div>
+                <div class="fact">💀 More than 1.5 lakh people lose their lives annually due to road accidents.</div>
+                <div class="fact">🏍️ Two-Wheelers account for the highest accident fatalities in India.</div>
+                <div class="fact">🌙 Night-time accidents are significantly more fatal.</div>
+                <div class="fact">🚦 Overspeeding id the leading cause of road accidents.</div>
+                <!--DUPLICATE for seamless loop-->
+                <div class="fact">🚨 India reports over 4.5 Lakh road accidents every year.</div>
+                <div class="fact">💀 More than 1.5 lakh people lose their lives annually due to road accidents.</div>
+                <div class="fact">🏍️ Two-Wheelers account for the highest accident fatalities in India.</div>
+                <div class="fact">🌙 Night-time accidents are significantly more fatal.</div>
+                <div class="fact">🚦 Overspeeding id the leading cause of road accidents.</div>
+            </div>
+        </section>
+        <section class="stats">
+            <h1 style="text-align: center; color: white; ">Listen To Statistics 📈</h1>
+            <div class="accident-qty.">
+                <h3 style="font-size: 25px;">🚗 Total Accidents Logged in :</h3>
+                <span style="font-size: 30px;">128 incidents</span>
+            </div>
+            <div class="last-reported">
+                <h3 style="font-size: 25px;">🕝 Latest Incident</h3>
+                <span style="font-size: 30px;">2 hours ago</span>
+            </div>
+        </section>
+    </main>
+    <script>
+        const wrapper = document.getElementById("factsWrapper");
+        let scrollAmount = 0;
+        setInterval(()=> {
+            scrollAmount+=220; //width of one fact+gap
+            if(scrollAmount>= wraper.scrollWidth - wrapper.clientWidth) {
+                scrollAmount=0;
+            }
+            wrapper.style.transform = `translateX(-${scrollAmount}px)`;
+        }, 2500); //change every 2.5 seconds
+    </script>
+</body>
+</html>

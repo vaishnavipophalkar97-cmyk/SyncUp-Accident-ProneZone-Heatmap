@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accident-Prone Zone Heatmap/Report</title>
+    <link rel="stylesheet" href="report.css">
+</head>
+<body>
+    <header>
+        <h1>📝 Report an Accident</h1>
+        <a href="index.html" class="btn">Back to Home</a>
+    </header>
+    <form id="report form">
+        <label>Location</label>
+        <input type="text" placeholder="Location of Accident" required/>
+        <label>Severity</label>
+        <select required>
+            <option value="">Select</option>
+            <option>Minor</option>
+            <option>Major</option>
+            <option>Fatal</option>
+        </select>
+        <label>Date & Time</label>
+        <input type="datetime-local" required/>
+        <label>Upload Photo(Optional)</label>
+        <input type="file"/>
+        <button type="Submit">Submit Report</button>
+    </form>
+    <script src="report.js"></script>
+</body>
+</html>

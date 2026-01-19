@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial,sans-serif;
+    background: #f4f6f8;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: #1e293b;
+    color: white;
+}
+h1 {
+    font-size: 18px;
+}
+.btn {
+    background: #38bdf8;
+    color: #000;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#map {
+    height: calc(100vh - 60px);
+}
+form {
+    max-width: 400px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+label {
+    display: block;
+    margin-top: 12px;
+}
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+button {
+    background: #1e293b;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}

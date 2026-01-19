@@ -1,0 +1,110 @@
+body {
+    background: linear-gradient(to right, rgb(211, 211, 246), rgb(118, 166, 244));
+}
+header {
+    background-image: linear-gradient(rgba(0,123,255,0.4) ),url("https://www.shutterstock.com/shutterstock/photos/454681642/display_1500/stock-photo-mumbai-india-july-traffic-in-india-s-largest-city-454681642.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0;
+}
+h1 {
+    font-size: 35px;
+}
+p {
+    font-size: 25px;
+    margin: 20px;
+    background-color: rgb(183, 221, 254);
+    width: fit-content;
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 999px;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    margin: 200px;
+}
+.map-btn {
+    background-color: green;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 200px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+.map-btn:hover {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.8);
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.report-btn {
+    background-color: red;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 200px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+.report-btn:hover {
+    box-shadow: 0 0 18px rgba(239,68,68,0.9);
+}
+.why {
+    margin: 0 auto;
+    background: rgb(217, 234, 248);
+    box-shadow: #222;
+    width: fit-content;
+    font-size: 25px;
+    border-radius: 8px;
+}
+.facts-section {
+    overflow: hidden;
+    background: #111;
+    padding: 12px 0;
+}
+.facts-wrapper {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: scrollFacts 20s linear infinite;
+}
+.fact {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 12px;
+    background: #222;
+    border-radius: 20px;
+}
+@keyframes scrollFacts {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+.overview {
+    margin: 0 ;
+    text-align: center;
+}
+.stats {
+    text-align: center;
+    display: flex;
+    gap: 100px;
+    margin: 30px 35px;
+}
